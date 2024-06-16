@@ -8,6 +8,8 @@ diesel::table! {
         user_id -> Int4,
         created_at -> Timestamp,
         updated_at -> Timestamp,
+        description -> Nullable<Text>,
+        due_date -> Nullable<Timestamp>,
     }
 }
 
